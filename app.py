@@ -611,17 +611,11 @@ if question:
 
             )
 
-
-            for bin_name in info["bins"]:
-
-                st.markdown(
-                    f"### 📍 {bin_name}"
-                )
-
-
-            st.caption(
-
-                f"Tìm thấy "
-                f"{len(info['bins'])} BIN."
-
+        for bin_name in info["bins"]:
+            st.markdown(
+                f"### 📍 {bin_name}"
             )
+
+        st.caption(
+            f"Tìm thấy {len(info['bins'])} BIN."
+        )
